@@ -1,1 +1,1 @@
-# shopping-list-clent
+# shopping-list-client
