@@ -1,0 +1,20 @@
+card-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+ .mat-checkbox-layout {
+    margin: 0;
+ }
+
+ ::ng-deep label{
+    margin: 0;
+ }
+
+ .list-title {
+   color: #0378D7;
+   font-weight: 200;
+   font-size: 30px;
+   text-align: left;
+ }

@@ -1,0 +1,15 @@
+<mat-sidenav-container>
+  <mat-sidenav class="sidenav" mode="side" opened>
+    <app-shoppinglist-list (shoppinglistWasSelected)= "selectedShoppingList = $event"
+    ></app-shoppinglist-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="container" style="display:flex;justify-content: center;">
+    <app-shoppinglist-detail
+            *ngIf="selectedShoppingList; else infoText"
+            [shoppinglist]="selectedShoppingList">
+    </app-shoppinglist-detail>
+    <ng-template #infoText>
+      <p>Please select a Shoppinglist!</p>
+    </ng-template>
+  </mat-sidenav-content>
+</mat-sidenav-container>

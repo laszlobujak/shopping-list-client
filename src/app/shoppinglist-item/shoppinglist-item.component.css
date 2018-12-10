@@ -1,0 +1,20 @@
+.list-item .list-length {
+    /* padding-left: 20px; */
+    margin-left: auto;
+    color: #a7a7a7
+}
+.list-item {
+   font-size: 12px;
+}
+
+.material-icons.md-18 {
+    font-size: 18px; 
+}
+
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+.list-item-title {
+    font-family: 'Karla', sans-serif;
+    font-size: 13px;
+    padding-left: 4%;
+}

@@ -1,0 +1,7 @@
+<mat-nav-list>
+  <app-shoppinglist-item
+          *ngFor="let shoppinglist of shoppinglists"
+          [shoppinglist]="shoppinglist"
+          (shoppinglistSelected)="onShoppinglistSelected(shoppinglist)"
+  ></app-shoppinglist-item>
+</mat-nav-list>

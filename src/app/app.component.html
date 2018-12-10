@@ -1,12 +1,12 @@
-<mat-toolbar color="primary">
-  <button mat-button>
+<mat-toolbar style="background: #0378D7" class="mat-elevation-z6" class="white-text">
+  <button mat-button routerLink="/" class="white-text">
     <mat-icon>home</mat-icon>
     ShoppingList
   </button>
   <div>
-    <button mat-button>My Lists</button>
+    <button mat-button routerLink="/shoppinglists">My Lists</button>
     <button mat-button>New List</button>
   </div>
 </mat-toolbar>
 
-<!-- <router-outlet></router-outlet> -->
+<router-outlet></router-outlet>

@@ -1,0 +1,30 @@
+<div class="main">
+  <div class="list-title">
+    <span>{{shoppinglist.title}}</span>
+  </div>
+
+  <mat-form-field style="width:250px">
+    <input 
+      matInput 
+      placeholder="Add item" 
+      #newItemTitle 
+      onsubmit="addToItems(newItemTitle)">
+  </mat-form-field>
+  <button type="submit" mat-button color="primary" (click)="addToItems(newItemTitle)">
+    <mat-icon>add_circle</mat-icon>
+  </button>
+    
+  <mat-card class="card-container" *ngFor="let item of shoppinglist.items; let i = index">
+    <mat-checkbox>{{item}}</mat-checkbox>
+    <span>
+      <button mat-icon-button><mat-icon>edit</mat-icon></button>
+      <button mat-icon-button (click)="deleteItem(i)"><mat-icon matListIcon>delete</mat-icon></button>
+    </span>
+  </mat-card>
+  <button 
+    mat-raised-button color="warn"
+    class="mat-elevation-z6"
+    style="min-width: 330px;margin-top: 8px">DELETE LIST
+  </button>
+
+</div>
